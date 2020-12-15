@@ -1,0 +1,11 @@
+package com.iftm.coursepds1.entities.enums;
+
+public enum OrderStatus {
+	
+	WAITING_PAUMENT,
+	PAID,
+	SHIPPED,
+	DELIVERED,
+	CANCELED;
+	
+}
