@@ -1,0 +1,5 @@
+package com.iftm.coursepds1.repositories;
+
+public class UserRepository {
+
+}
