@@ -1,0 +1,8 @@
+package com.iftm.coursepds1.resources.exceptions;
+
+import org.springframework.web.bind.annotation.ControllerAdvice;
+
+@ControllerAdvice                           //intecerpetar as eceçoes 
+public class ResourceExceptionHandler {
+
+}
