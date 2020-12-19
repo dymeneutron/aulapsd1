@@ -1,0 +1,5 @@
+package com.iftm.coursepds1.dto;
+
+public class ProductDTO {
+
+}

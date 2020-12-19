@@ -1,0 +1,28 @@
+package com.iftm.coursepds1.services;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.iftm.coursepds1.entities.Product;
+import com.iftm.coursepds1.repositories.ProductRepository;
+
+@Service                        // fazer o registro da classe service no spring 
+public class ProductService {     	// classe ira buscar usarios por id e busca por todos usuarios
+    
+	@Autowired
+	private ProductRepository repository;							// fazer injeção de dependencia com userRepository
+	
+	
+	public List<Product> findAll(){
+		return repository.findAll();
+	}
+	public Product findById(Long id) {
+		Optional<Product> obj = repository.findById(id);
+		return obj.get();
+	}
+		
+	
+}
