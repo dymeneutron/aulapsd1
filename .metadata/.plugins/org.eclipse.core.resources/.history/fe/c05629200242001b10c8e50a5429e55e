@@ -1,0 +1,11 @@
+package com.iftm.coursepds1.dto;
+
+public class UserInsertDTO {
+
+	private Long id;
+	private String name;
+	private String email;
+	private String phone;
+	private String password;
+	
+}
