@@ -40,5 +40,22 @@
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PutMapping"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
+    <fullyQualifiedTypeName name="org.hibernate.ResourceClosedException"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ControllerAdvice"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+    <fullyQualifiedTypeName name="java.security.Timestamp"/>
+    <fullyQualifiedTypeName name="com.iftm.coursepds1.services.exception.ResourceNotFoundException"/>
+    <fullyQualifiedTypeName name="javax.management.JMRuntimeException"/>
+    <fullyQualifiedTypeName name="org.springframework.dao.EmptyResultDataAccessException"/>
+    <fullyQualifiedTypeName name="org.springframework.dao.DataIntegrityViolationException"/>
+    <fullyQualifiedTypeName name="java.lang.Runtime"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
     <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ExceptionHandler"/>
+    <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
+    <fullyQualifiedTypeName name="com.iftm.coursepds1.resources.exceptions.StandardError"/>
+    <fullyQualifiedTypeName name="java.time.Instant"/>
+    <fullyQualifiedTypeName name="com.iftm.coursepds1.services.exception.DatabaseException"/>
+    <fullyQualifiedTypeName name="javax.persistence.EntityNotFoundException"/>
 </qualifiedTypeNameHistroy>
