@@ -19,11 +19,11 @@ private Long id;
 	private long clientId;
 	private String clientName;
 	private String clientEmail;
-	
+
 	public OrderDTO() {
 	}
 
-	public OrderDTO(Long id, Instant moment, OrderStatus orderStatus, long clientId, String clientName,
+	public OrderDTO(Long id, Instant moment, OrderStatus orderStatus, Long clientId, String clientName,
 			String clientEmail) {
 		
 		this.id = id;
@@ -32,6 +32,7 @@ private Long id;
 		this.clientId = clientId;
 		this.clientName = clientName;
 		this.clientEmail = clientEmail;
+
 	}
 	
 	public OrderDTO(Order entity) {
