@@ -7,6 +7,8 @@ import java.util.stream.Collectors;
 import javax.persistence.EntityNotFoundException;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -17,6 +19,7 @@ import com.iftm.coursepds1.entities.Category;
 import com.iftm.coursepds1.entities.Product;
 import com.iftm.coursepds1.repositories.CategoryRepository;
 import com.iftm.coursepds1.repositories.ProductRepository;
+import com.iftm.coursepds1.services.exception.DatabaseException;
 import com.iftm.coursepds1.services.exception.ResourceNotFoundException;
 
 @Service                        // fazer o registro da classe service no spring 
@@ -58,6 +61,16 @@ public class ProductService {     	// classe ira buscar usarios por id e busca p
 			throw new ResourceNotFoundException(id);
 		}
 	}
+	
+	public void delete(Long id) {
+		try{ 
+			repository.deleteById(id);
+		}catch(EmptyResultDataAccessException e) {   // retorna uma exeção em caso de não haver usuarios para deletar
+			throw new ResourceNotFoundException(id);
+		} catch(DataIntegrityViolationException e) {
+			throw new DatabaseException(e.getMessage());
+			}
+		} 
 	
 	private void updateData(Product entity, ProductCategoriesDTO dto) {
 		entity.setName(dto.getName());

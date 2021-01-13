@@ -45,7 +45,7 @@ public class UserService {     	// classe ira buscar usarios por id e busca por 
 	public void delete(Long id) {
 		try{ 
 			repository.deleteById(id);
-		}catch(EmptyResultDataAccessException e) {
+		}catch(EmptyResultDataAccessException e) {   // retorna uma exeção em caso de não haver usuarios para deletar
 			throw new ResourceNotFoundException(id);
 		} catch(DataIntegrityViolationException e) {
 			throw new DatabaseException(e.getMessage());
